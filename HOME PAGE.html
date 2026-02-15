@@ -1420,7 +1420,7 @@
 
     <!-- MORE TOURS BUTTON -->
     <div class="more-btn">
-      <a href="#" class="btn">More Tours</a>
+      <a href="PACKAGES.html" class="btn">More Tours</a>
     </div>
   </div>
 </section>
@@ -1486,45 +1486,43 @@
     </div>
 
     <div class="gallery-grid">
-      <img src="PHOTO/MINAZI.jpg" onclick="openLightbox(0)">
-      <img src="PHOTO/JOZANI.jpg" onclick="openLightbox(1)">
-      <img src="PHOTO/MIGOMBA.jpg" onclick="openLightbox(2)">
-      <img src="PHOTO/KISIWA.jpg" onclick="openLightbox(3)">
-      <img src="PHOTO/FARM.jpg" onclick="openLightbox(4)">
+      <img src="PHOTO/MINAZI.jpg">
+      <img src="PHOTO/JOZANI.jpg">
+      <img src="PHOTO/MIGOMBA.jpg">
+      <img src="PHOTO/KISIWA.jpg">
+      <img src="PHOTO/FARM.jpg">
 
-      <img src="PHOTO/HOTEL.jpg" onclick="openLightbox(5)">
-      <img src="PHOTO/TANGAWIZI.jpg" onclick="openLightbox(6)">
-      <img src="PHOTO/TEMBO.jpg" onclick="openLightbox(7)">
-      <img src="PHOTO/KAYAKING.jpg" onclick="openLightbox(8)">
-      <img src="PHOTO/KIZIMKAZI.jpg" onclick="openLightbox(9)">
+      <img src="PHOTO/HOTEL.jpg">
+      <img src="PHOTO/TANGAWIZI.jpg">
+      <img src="PHOTO/TEMBO.jpg">
+      <img src="PHOTO/KAYAKING.jpg">
+      <img src="PHOTO/KIZIMKAZI.jpg">
 
-      <img src="PHOTO/KILI.jpg" onclick="openLightbox(10)">
-      <img src="PHOTO/KASA.jpg" onclick="openLightbox(11)">
-      <img src="PHOTO/2MBILI.jpg" onclick="openLightbox(12)">
-      <img src="PHOTO/KOBE.jpg" onclick="openLightbox(13)">
-      <img src="PHOTO/HOTEL.jpg" onclick="openLightbox(14)">
+      <img src="PHOTO/KILI.jpg">
+      <img src="PHOTO/KASA.jpg">
+      <img src="PHOTO/KAYAKING1.jpeg">
+      <img src="PHOTO/KOBE.jpg">
+      <img src="PHOTO/HOTEL.jpg">
 
-      <img src="PHOTO/PRISON2.jpg" onclick="openLightbox(15)">
-      <img src="PHOTO/PRISON3.jpg" onclick="openLightbox(16)">
-      <img src="PHOTO/SERENGETI.jpg" onclick="openLightbox(17)">
-      <img src="PHOTO/STONETOWN2.jpg" onclick="openLightbox(18)">
-      <img src="PHOTO/FARM.jpg" onclick="openLightbox(19)">
+      <img src="PHOTO/PRISON2.jpg">
+      <img src="PHOTO/PRISON3.jpg">
+      <img src="PHOTO/SERENGETI.jpg">
+      <img src="PHOTO/STONETOWN2.jpg">
+      <img src="PHOTO/FARM.jpg">
     </div>
   </div>
 </section>
 
 <div class="lightbox" id="lightbox">
-  <span class="close" onclick="closeLightbox()">×</span>
-  <span class="prev" onclick="changeImage(-1)">❮</span>
-  <img id="lightboxImage">
-  <span class="next" onclick="changeImage(1)">❯</span>
-</div>
 
-<div class="lightbox" id="lightbox">
-  <span class="close" onclick="closeGallery()">&times;</span>
-  <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+  <span class="close" onclick="closeLightbox()">×</span>
+
+  <span class="prev" onclick="changeSlide(-1)">❮</span>
+
   <img id="lightbox-img">
-  <span class="next" onclick="changeSlide(1)">&#10095;</span>
+
+  <span class="next" onclick="changeSlide(1)">❯</span>
+
 </div>
 
 
@@ -1539,7 +1537,7 @@
       </div>
     </div>
 
-    <a href="https://wa.me/255746823907" class="floating-book">
+    <a href="https://wa.me/+255717534611" class="floating-book">
   Book
 </a>
   </section>
@@ -1611,38 +1609,6 @@
       }
     });
   </script>
-  <script>
-  const images = document.querySelectorAll('.gallery-grid img');
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  let currentIndex = 0;
-
-  function openGallery(index) {
-    currentIndex = index;
-    lightbox.style.display = 'flex';
-    lightboxImg.src = images[currentIndex].src;
-  }
-
-  function closeGallery() {
-    lightbox.style.display = 'none';
-  }
-
-  function changeSlide(direction) {
-    currentIndex += direction;
-    if (currentIndex < 0) currentIndex = images.length - 1;
-    if (currentIndex >= images.length) currentIndex = 0;
-    lightboxImg.src = images[currentIndex].src;
-  }
-
-  // Touch swipe support
-  let startX = 0;
-  lightbox.addEventListener('touchstart', e => startX = e.touches[0].clientX);
-  lightbox.addEventListener('touchend', e => {
-    let endX = e.changedTouches[0].clientX;
-    if (startX - endX > 50) changeSlide(1);
-    if (endX - startX > 50) changeSlide(-1);
-  });
-</script>
 
 <script>
   const slides = document.querySelectorAll(".slide");
@@ -1657,37 +1623,54 @@
 
 
 <script>
-  const galleryImages = document.querySelectorAll('.gallery-grid img');
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImage = document.getElementById('lightboxImage');
-  let currentIndex = 0;
+const galleryImages = document.querySelectorAll('.gallery-grid img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
 
-  function openLightbox(index) {
+let currentIndex = 0;
+
+// open lightbox
+galleryImages.forEach((img, index) => {
+  img.addEventListener('click', () => {
     currentIndex = index;
     lightbox.style.display = 'flex';
-    lightboxImage.src = galleryImages[currentIndex].src;
-  }
-
-  function closeLightbox() {
-    lightbox.style.display = 'none';
-  }
-
-  function changeImage(direction) {
-    currentIndex += direction;
-    if (currentIndex < 0) currentIndex = galleryImages.length - 1;
-    if (currentIndex >= galleryImages.length) currentIndex = 0;
-    lightboxImage.src = galleryImages[currentIndex].src;
-  }
-
-  // Swipe support
-  let startX = 0;
-  lightbox.addEventListener('touchstart', e => startX = e.touches[0].clientX);
-  lightbox.addEventListener('touchend', e => {
-    let endX = e.changedTouches[0].clientX;
-    if (startX - endX > 50) changeImage(1);
-    if (endX - startX > 50) changeImage(-1);
+    lightboxImg.src = galleryImages[currentIndex].src;
   });
+});
+
+// close lightbox
+function closeLightbox() {
+  lightbox.style.display = 'none';
+}
+
+// next / prev slide
+function changeSlide(direction) {
+  currentIndex += direction;
+
+  if (currentIndex < 0)
+    currentIndex = galleryImages.length - 1;
+
+  if (currentIndex >= galleryImages.length)
+    currentIndex = 0;
+
+  lightboxImg.src = galleryImages[currentIndex].src;
+}
+
+// swipe support
+let startX = 0;
+
+lightbox.addEventListener('touchstart', e => {
+  startX = e.touches[0].clientX;
+});
+
+lightbox.addEventListener('touchend', e => {
+  let endX = e.changedTouches[0].clientX;
+
+  if (startX - endX > 50) changeSlide(1);
+  if (endX - startX > 50) changeSlide(-1);
+});
 </script>
+
 
   <script>
   const startBtn = document.getElementById('startBtn');
