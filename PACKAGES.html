@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tour Packages Mzungutours</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font: Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="packages.css">
+
+<style>
+:root {
+  --primary: #0aa6a6;
+  --dark: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+      body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+/* ================= TOP BAR ================= */
+.top-bar {
+  background: #16a34a;
+  color: #fff;
+}
+
+.top-bar-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.top-whatsapp {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-whatsapp img,
+.top-right img {
+  width: 18px;
+  filter: invert(1);
+}
+
+.top-right {
+  display: flex;
+  gap: 0.8rem;
+}
+
+/* ================= MAIN NAV ================= */
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+/* MAIN NAV BAR */
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* SPACE BETWEEN LOGO & MENU */
+}
+
+/* LOGO LEFT */
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;                 /* SPACE BETWEEN LOGO & TEXT */
+  text-decoration: none;
+}
+
+.logo-link img {
+  height: 70px;
+  width: auto;
+}
+
+.logo-link span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #008000;              /* GREEN TEXT */
+  white-space: nowrap;
+}
+
+/* NAV RIGHT */
+.menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 70px;
+  width: auto;
+}
+
+/* Logo text color */
+.logo-link span {
+  color: #16a34a;   /* <-- your green color */
+  font-weight: 700;  /* optional, makes it bold */
+  font-size: 1.4rem; /* optional, adjusts size */
+}
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 140%;
+  left: 0;
+  background: #fff;
+  min-width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: .3s;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.6rem 1rem;
+  font-size: .9rem;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+ /*........................HUMBAG*................................/
+    /* ================= TOP BAR ================= */
+.top-bar {
+  background: #16a34a;
+  color: #fff;
+}
+
+.top-bar-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.top-whatsapp {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-whatsapp img,
+.top-right img {
+  width: 18px;
+  filter: invert(1);
+}
+
+.top-right {
+  display: flex;
+  gap: 0.8rem;
+}
+
+
+/* MAIN NAV BAR */
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* SPACE BETWEEN LOGO & MENU */
+}
+
+/* LOGO LEFT */
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;                 /* SPACE BETWEEN LOGO & TEXT */
+  text-decoration: none;
+}
+
+.logo-link img {
+  height: 70px;
+  width: auto;
+}
+
+.logo-link span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #008000;              /* GREEN TEXT */
+  white-space: nowrap;
+}
+
+/* NAV RIGHT */
+.menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 70px;
+  width: auto;
+}
+
+.logo-link span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+}
+
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.6rem 1rem;
+  font-size: .9rem;
+}
+
+}
+
+/* DROPDOWN BASE */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.15);
+  display: none;
+  z-index: 999;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 16px;
+}
+
+/* DESKTOP HOVER */
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* MOBILE STYLE */
+@media (max-width: 768px) {
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+}
+
+
+
+/* HAMBURGER ICON */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #000;
+  border-radius: 3px;
+}
+
+/* MOBILE MENU */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: .3s ease;
+  }
+
+  .menu a {
+    padding: 12px 20px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+
+:root {
+  --primary: #0aa6a6;
+}
+
+/* NAV CONTAINER */
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* LOGO */
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.logo-link img {
+  height: 60px;
+}
+
+.logo-link span {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #000;
+  border-radius: 3px;
+}
+
+/* MENU DESKTOP */
+.menu {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.menu a,
+.dropdown-toggle {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+/* DROPDOWN DESKTOP */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.15);
+  display: none;
+  z-index: 999;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 16px;
+}
+
+.dropdown {
+  position: relative; /* prevents hover gap */
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+    display: none;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu a,
+  .dropdown-toggle {
+    width: 100%;
+    padding: 14px 20px;
+    text-align: left;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+}
+
+    .footer-logo {
+  margin-top: 1rem;
+  width: 180px;        /* BIG but controlled */
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.footer-follow-text {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 250px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.footer-social img {
+  width: 22px;
+  height: 22px;
+  filter: invert(1);
+  opacity: 0.8;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-social img:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+
+
+
+body {
+  margin: 0;
+  background: #f4f6f5;
+}
+
+/* ================= HERO ================= */
+.hero {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  animation: fade 12s infinite;
+}
+
+.slide1 {
+  background-image:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url('PHOTO/SERENGETI.jpg');
+}
+
+.slide2 {
+  background-image:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url('PHOTO/NAKUPENDA8.jpg');
+  animation-delay: 6s;
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  10% {opacity: 1;}
+  45% {opacity: 1;}
+  55% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+/* ================= PACKAGES ================= */
+.packages-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.packages-section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #16a34a;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.package-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.package-card:hover {
+  transform: translateY(-6px);
+}
+
+.package-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.package-body {
+  padding: 20px;
+}
+
+.package-body h3 {
+  margin-top: 0;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+.features i {
+  color: #16a34a;
+  font-size: 0.95rem;
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.price-btn {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: default;
+}
+
+.book-btn {
+  flex: 1;
+  text-align: center;
+  border: 2px solid #16a34a;
+  padding: 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background: #16a34a;
+  color: white;
+}
+
+.more-tours {
+  background: linear-gradient(135deg, #16a34a, #0aa6a6);
+  color: #fff;
+  text-align: center;
+  padding: 70px 20px;
+  margin-top: 80px;
+  border-radius: 30px 30px 0 0;
+}
+
+.more-tours h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.more-tours p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  opacity: 0.95;
+}
+
+.more-tours-btn {
+  display: inline-block;
+  background: #fff;
+  color: #16a34a;
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.more-tours-btn:hover {
+  background: #f0fdf4;
+  transform: translateY(-3px);
+}
+
+
+
+/* ================= FOOTER ================= */
+footer {
+  background: var(--dark);
+  color: #cbd5f5;
+  padding: 3rem 1rem;
+}
+
+.footer-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+footer h4 {
+  color: #fff;
+}
+
+footer a {
+  color: #cbd5f5;
+  text-decoration: none;
+  display: block;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: .8rem;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <header class="main-header">
+<head>
+  ...
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+  <!-- TOP BAR -->
+ <div class="top-bar">
+    <div class="top-bar-inner">
+      <a href="https://wa.me/+255717534611" class="top-whatsapp">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+        <span>+255 717 534 611</span>
+      </a>
+
+      <div class="top-right">
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tripadvisor.svg" alt="TripAdvisor"></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"></a>
+        <a href="https://www.facebook.com/profile.php?id=61586918661064" title="Facebook"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+        <a href="https://www.instagram.com/mzungutours" title="Instagram"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN NAV -->
+ <div class="nav">
+   <!-- LOGO LEFT -->
+  <div class="logo">
+    <a href="index.html" class="logo-link">
+      <img src="PHOTO/LOGO.png" alt="Mzungu Tours Logo">
+      <span>Mzungu Tours</span>
+    </a>
+  </div>
+<!-- HAMBURGER RIGHT -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+  </div>
+
+
+    <nav class="menu" id="menu">
+      <a href="HOME PAGE.html">Home</a>
+
+   <div class="dropdown">
+          <a href="#">Tours ▾</a>
+          <div class="dropdown-menu">
+            <a href="FULL DAY.html">Full Day Tours</a>
+            <a href="HALF DAY.html">Half Day Tours</a>
+          </div>
+        </div>
+    <div class="dropdown">
+          <a href="#">Wildlife ▾</a>
+          <div class="dropdown-menu">
+            <a href="TANZANIA SAFAR.html">Tanzania Safari</a>
+            <a href="ZANZIBAR SAFAR.html">Zanzibar Safari</a>
+          </div>
+        </div>
+      <a href="PACKAGES.html">Packages</a>
+      <a href="ABOUT US.html">About Us</a>
+      <a href="TRANSFER.html">Transfers</a>
+
+      <div class="dropdown">
+        <a href="#">Contact ▾</a>
+        <div class="dropdown-menu">
+          <a href="contact.html">Contact Us</a>
+          <a href="b2b.html">B2B</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+  <div class="hero-slide slide1"></div>
+  <div class="hero-slide slide2"></div>
+
+  <div class="hero-content">
+    <h1>Our Tour Packages</h1>
+    <p>Explore Zanzibar with our best travel packages and enjoy beautiful beaches, rich culture, exciting tours, and stress-free travel.</p>
+  </div>
+</section>
+
+<!-- ================= PACKAGES SECTION ================= -->
+<section class="packages-section">
+  <h2>Popular Packages</h2>
+
+  <div class="packages-grid">
+
+    <!-- CARD 1 -->
+    <div class="package-card">
+      <img src="PHOTO/PRISON4.jpg" alt="Nungwi">
+
+      <div class="package-body">
+        <h3>Zanzibar 3 Days 2 Nights Package</h3>
+        <p class="description">
+       Visit Zanzibar for 3 days. The package includes Hotels, Airport transfers.
+        </p>
+
+<div class="features">
+  <span><i class="fa-solid fa-clock"></i> 3 Days</span>
+  <span><i class="fa-solid fa-bed"></i> Hotel</span>
+  <span><i class="fa-solid fa-binoculars"></i> Tours</span>
+  <span><i class="fa-solid fa-utensils"></i> Meals</span>
+  <span><i class="fa-solid fa-car"></i> Transfers</span>
+  <span><i class="fa-solid fa-mug-hot"></i> Breakfast</span>
+</div>
+
+
+        <div class="buttons">
+          <button class="price-btn">$398</button>
+          <a href="PACKAGE 3 DAY.html" class="book-btn">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="package-card">
+      <img src="PHOTO/STONE TOWN.jpg" alt="Zanzibar">
+
+      <div class="package-body">
+        <h3>Zanzibar 4 Days 3 Nights Package</h3>
+        <p class="description">
+          Discover Zanzibar’s culture, beaches, and exciting island tours.
+        </p>
+
+   <div class="features">
+  <span><i class="fa-solid fa-clock"></i> 4 Days</span>
+  <span><i class="fa-solid fa-bed"></i> Hotel</span>
+  <span><i class="fa-solid fa-binoculars"></i> Tours</span>
+  <span><i class="fa-solid fa-utensils"></i> Meals</span>
+  <span><i class="fa-solid fa-car"></i> Transfers</span>
+  <span><i class="fa-solid fa-mug-hot"></i> Breakfast</span>
+</div>
+
+        <div class="buttons">
+          <button class="price-btn">$616</button>
+          <a href="PACKAGE 4 DAY.html" class="book-btn">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="package-card">
+      <img src="PHOTO/KAYAKING4.jpeg" alt="Stone Town">
+
+      <div class="package-body">
+        <h3>Zanzibar 5 Days 4 Nights Package</h3>
+        <p class="description">
+        To book this package is simple! Just send us an inquiry.
+        </p>
+
+      <div class="features">
+    <span><i class="fa-solid fa-clock"></i> 5 Days</span>
+  <span><i class="fa-solid fa-bed"></i> Hotel</span>
+  <span><i class="fa-solid fa-binoculars"></i>Tours</span>
+  <span><i class="fa-solid fa-utensils"></i> Meals</span>
+  <span><i class="fa-solid fa-car"></i> Transfers</span>
+  <span><i class="fa-solid fa-mug-hot"></i> Breakfast</span>
+</div>
+
+        <div class="buttons">
+          <button class="price-btn">$736</button>
+          <a href="PACKAGE 5 DAY.html" class="book-btn">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PACKAGES SECTION ================= -->
+<section class="packages-section">
+  <div class="packages-grid">
+
+    <!-- CARD 1 -->
+    <div class="package-card">
+      <img src="PHOTO/KIPEPEO1.jpeg" alt="Nungwi">
+
+      <div class="package-body">
+        <h3>Zanzibar 6 Days 5 Nights Package</h3>
+        <p class="description">
+       Visit Zanzibar for 6 days. The package includes Hotels, Airport transfers.
+        </p>
+
+<div class="features">
+  <span><i class="fa-solid fa-clock"></i> 6 Days</span>
+  <span><i class="fa-solid fa-bed"></i> Hotel</span>
+  <span><i class="fa-solid fa-binoculars"></i> Tours</span>
+  <span><i class="fa-solid fa-utensils"></i> Meals</span>
+  <span><i class="fa-solid fa-car"></i> Transfers</span>
+  <span><i class="fa-solid fa-mug-hot"></i> Breakfast</span>
+</div>
+
+
+        <div class="buttons">
+          <button class="price-btn">$1116</button>
+          <a href="PACKAGE 6 DAY.html" class="book-btn">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="package-card">
+      <img src="PHOTO/KASA.jpg" alt="Zanzibar">
+
+      <div class="package-body">
+        <h3>Zanzibar 7 Days 6 Nights Package</h3>
+        <p class="description">
+          We make sure you are stress-free to plan your Zanzibar vacation
+        </p>
+
+   <div class="features">
+  <span><i class="fa-solid fa-clock"></i> 7 Days</span>
+  <span><i class="fa-solid fa-bed"></i> Hotel</span>
+  <span><i class="fa-solid fa-binoculars"></i> Tours</span>
+  <span><i class="fa-solid fa-utensils"></i> Meals</span>
+  <span><i class="fa-solid fa-car"></i> Transfers</span>
+  <span><i class="fa-solid fa-mug-hot"></i> Breakfast</span>
+</div>
+
+        <div class="buttons">
+          <button class="price-btn">$1298</button>
+          <a href="PACKAGE 7 DAY.html" class="book-btn">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="package-card">
+      <img src="PHOTO/KAYAKING2.jpeg" alt="Stone Town">
+
+      <div class="package-body">
+        <h3>Zanzibar 8 Days 7 Nights Package</h3>
+        <p class="description">
+        To book this package is simple! Just send us an inquiry.
+        </p>
+
+      <div class="features">
+    <span><i class="fa-solid fa-clock"></i> 5 Days</span>
+  <span><i class="fa-solid fa-bed"></i> Hotel</span>
+  <span><i class="fa-solid fa-binoculars"></i>Tours</span>
+  <span><i class="fa-solid fa-utensils"></i> Meals</span>
+  <span><i class="fa-solid fa-car"></i> Transfers</span>
+  <span><i class="fa-solid fa-mug-hot"></i> Breakfast</span>
+</div>
+
+        <div class="buttons">
+          <button class="price-btn">$1330</button>
+          <a href="PACKAGE 8 DAY.html" class="book-btn">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PACKAGES SECTION ================= -->
+<section class="packages-section">
+  <div class="packages-grid">
+
+    <!-- CARD 1 -->
+    <div class="package-card">
+      <img src="PHOTO/JOZANI.jpg" alt="Nungwi">
+
+      <div class="package-body">
+        <h3>Zanzibar 9 Days 8 Nights Package</h3>
+        <p class="description">
+       Visit Zanzibar for 9 days. The package includes Hotels, Airport transfers.
+        </p>
+
+<div class="features">
+  <span><i class="fa-solid fa-clock"></i> 9 Days</span>
+  <span><i class="fa-solid fa-bed"></i> Hotel</span>
+  <span><i class="fa-solid fa-binoculars"></i> Tours</span>
+  <span><i class="fa-solid fa-utensils"></i> Meals</span>
+  <span><i class="fa-solid fa-car"></i> Transfers</span>
+  <span><i class="fa-solid fa-mug-hot"></i> Breakfast</span>
+</div>
+
+
+        <div class="buttons">
+          <button class="price-btn">$1428</button>
+          <a href="PACKAGE 9 DAY.html" class="book-btn">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="package-card">
+      <img src="PHOTO/PRISON1.jpg" alt="Zanzibar">
+
+      <div class="package-body">
+        <h3>Zanzibar 10 Days 9 Nights Package</h3>
+        <p class="description">
+          We make sure you are stress-free to plan your Zanzibar vacation
+        </p>
+
+   <div class="features">
+  <span><i class="fa-solid fa-clock"></i> 10 Days</span>
+  <span><i class="fa-solid fa-bed"></i> Hotel</span>
+  <span><i class="fa-solid fa-binoculars"></i> Tours</span>
+  <span><i class="fa-solid fa-utensils"></i> Meals</span>
+  <span><i class="fa-solid fa-car"></i> Transfers</span>
+  <span><i class="fa-solid fa-mug-hot"></i> Breakfast</span>
+</div>
+
+        <div class="buttons">
+          <button class="price-btn">$1589</button>
+          <a href="PACKAGE 10 DAY.html" class="book-btn">Book Now</a>
+        </div>
+      </div>
+    </div>
+      <!-- CARD 2 -->
+    <div class="package-card">
+      <img src="PHOTO/ROCK3.jpg" alt="Zanzibar">
+
+      <div class="package-body">
+        <h3>Zanzibar 11 Days 10 Nights Package</h3>
+        <p class="description">
+          We make sure you are stress-free to plan your Zanzibar vacation
+        </p>
+
+   <div class="features">
+  <span><i class="fa-solid fa-clock"></i> 11 Days</span>
+  <span><i class="fa-solid fa-bed"></i> Hotel</span>
+  <span><i class="fa-solid fa-binoculars"></i> Tours</span>
+  <span><i class="fa-solid fa-utensils"></i> Meals</span>
+  <span><i class="fa-solid fa-car"></i> Transfers</span>
+  <span><i class="fa-solid fa-mug-hot"></i> Breakfast</span>
+</div>
+
+        <div class="buttons">
+          <button class="price-btn">$2589</button>
+          <a href="PACKAGE 11 DAY.html" class="book-btn">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="more-tours">
+  <h2>Want to Explore More Tours?</h2>
+  <p>Discover more exciting Zanzibar tours and unique experiences.</p>
+
+  <a href="ZANZIBAR SAFAR.html" class="more-tours-btn">
+    View More Tours
+  </a>
+</section>
+
+
+<footer>
+  <div class="footer-grid">
+
+    <!-- LEFT SIDE -->
+    <div class="footer-brand">
+      <h4>Mzungu tours, Zanzibar</h4>
+      <img src="PHOTO/LOGO.png" alt="ZanzibarWorld Logo" class="footer-logo">
+    </div>
+
+    <!-- RIGHT SIDE COLUMN 1 -->
+    <div>
+      <h4>Explore</h4>
+      <a href="FULL DAY.html">Full day tours</a>
+      <a href="HALF DAY.html">Half day tous</a>
+      <a href="TANZANIA SAFAR.html">Tanzania safari</a>
+      <a href="ZANZIBAR SAFAR.html">Safari from zanzibar</a>
+      <a href="TRANSFER.html">Transfers</a>
+      <a href="PACKAGES.html">Packages</a>
+    </div>
+
+    <!-- RIGHT SIDE COLUMN 2 -->
+    <div>
+      <h4>Support</h4>
+      <a href="ABOOUT US.html">Contact</a>
+      <a href="ABOUT US.html">About us</a>
+      <a href="B2B.html">B2B</a>
+      <a href="ABOUT US.html">Social media</a>
+      <a href="ABOUT US.html">FAQ</a>
+      <a href="ABOUT US.html">Privacy Policy</a>
+    </div>
+
+<!-- FOLLOW US COLUMN -->
+<div>
+  <h4>Follow Us</h4>
+
+  <p class="footer-follow-text">
+    Stay connected with us on social media for the latest tours, safari updates, and Zanzibar travel inspiration.
+  </p>
+
+  <div class="footer-social">
+    <a href="https://www.facebook.com/profile.php?id=61586918661064"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+    <a href="https://www.instagram.com/mzungutours"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+    <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"></a>
+    <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok"></a>
+    <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tripadvisor.svg" alt="TripAdvisor"></a>
+  </div>
+
+</div>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 Mzungu tours zanzibar. All rights reserved.
+  </div>
+</footer>
+
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
+
+// Toggle mobile menu
+hamburger.addEventListener("click", function () {
+  menu.classList.toggle("show");
+});
+
+// Dropdown click for mobile
+document.querySelectorAll(".dropdown > a").forEach(function(drop) {
+  drop.addEventListener("click", function(e) {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      this.parentElement.classList.toggle("open");
+    }
+  });
+});
+</script>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
+
+hamburger.addEventListener("click", function () {
+  menu.classList.toggle("show");
+});
+
+// Mobile dropdown click only
+document.querySelectorAll(".dropdown > a").forEach(function(drop) {
+  drop.addEventListener("click", function(e) {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      this.parentElement.classList.toggle("open");
+    }
+  });
+});
+</script>
+
+
+</body>
+</html>

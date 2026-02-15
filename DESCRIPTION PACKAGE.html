@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ngorongoro & Serengeti Safari</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary: #16a34a;
+  --dark: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f8fafc;
+  color: #111;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ================= TITLE ================= */
+.tour-title {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.tour-title h1 {
+  font-size: 2.2rem;
+}
+
+/* ================= IMAGE SLIDER ================= */
+.slider-box {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,.15);
+}
+
+.slider {
+  overflow: hidden;
+  height: 380px;
+  touch-action: pan-y;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.slides img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  flex-shrink: 0;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* ================= SECTIONS ================= */
+.section {
+  background: #fff;
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.1);
+}
+
+.section h2 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+/* ================= ITINERARY ================= */
+.day {
+  margin-bottom: 20px;
+}
+
+.day h3 {
+  margin-bottom: 6px;
+}
+
+/* ================= HIGHLIGHTS ================= */
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.highlight {
+  background: #f1f5f9;
+  padding: 15px;
+  border-radius: 14px;
+  font-size: 0.95rem;
+}
+
+/* ================= VIDEO ================= */
+.video-box video {
+  width: 100%;
+  border-radius: 18px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .slides img {
+    height: 250px;
+  }
+  .slider {
+    height: 250px;
+  }
+  .tour-title h1 {
+    font-size: 1.7rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- TITLE -->
+  <div class="tour-title">
+    <h1>Ngorongoro Crater & Serengeti Safari</h1>
+    <p>Best Tanzania Wildlife Experience</p>
+  </div>
+
+  <!-- IMAGE SLIDER -->
+  <div class="slider-box">
+    <div class="slider">
+      <div class="slides">
+        <img src="PHOTO/ngorongoro1.jpg">
+        <img src="PHOTO/ngorongoro2.jpg">
+        <img src="PHOTO/ngorongoro3.jpg">
+      </div>
+    </div>
+  </div>
+
+  <!-- DESCRIPTION -->
+  <div class="section">
+    <h2>Tour Description</h2>
+    <p>
+      Experience the best of Tanzania’s wildlife on this unforgettable safari
+      covering Ngorongoro Crater and Serengeti National Park. Witness the Big Five,
+      endless savannahs, and breathtaking landscapes with professional guides.
+    </p>
+  </div>
+
+  <!-- ITINERARY -->
+  <div class="section">
+    <h2>Day by Day Itinerary</h2>
+
+    <div class="day">
+      <h3>Day 1 – Lake Manyara National Park</h3>
+      <p>Game drive, tree-climbing lions, flamingos, and groundwater forest.</p>
+    </div>
+
+    <div class="day">
+      <h3>Day 2 – Serengeti National Park</h3>
+      <p>Full-day safari exploring the endless plains and rich wildlife.</p>
+    </div>
+
+    <div class="day">
+      <h3>Day 3 – Ngorongoro Crater</h3>
+      <p>Descend into the crater for an unforgettable Big Five experience.</p>
+    </div>
+  </div>
+
+  <!-- HIGHLIGHTS -->
+  <div class="section">
+    <h2>Highlights</h2>
+    <div class="highlights">
+      <div class="highlight">✔ Big Five Game Viewing</div>
+      <div class="highlight">✔ Professional Safari Guide</div>
+      <div class="highlight">✔ Luxury Safari Vehicles</div>
+      <div class="highlight">✔ Scenic Landscapes</div>
+      <div class="highlight">✔ Cultural Encounters</div>
+    </div>
+  </div>
+
+  <!-- VIDEO -->
+  <div class="section video-box">
+    <h2>Safari Preview</h2>
+    <video autoplay muted loop playsinline>
+      <source src="VIDEO/safari-preview.mp4" type="video/mp4">
+    </video>
+  </div>
+
+</div>
+
+<!-- SLIDER SCRIPT -->
+<script>
+const slides = document.querySelector('.slides');
+const images = document.querySelectorAll('.slides img');
+let index = 0;
+let startX = 0;
+
+function showSlide() {
+  slides.style.transform = `translateX(-${index * 100}%)`;
+}
+
+setInterval(() => {
+  index = (index + 1) % images.length;
+  showSlide();
+}, 3500);
+
+slides.parentElement.addEventListener('touchstart', e => {
+  startX = e.touches[0].clientX;
+});
+
+slides.parentElement.addEventListener('touchend', e => {
+  const endX = e.changedTouches[0].clientX;
+  const diff = startX - endX;
+
+  if (diff > 50) index++;
+  if (diff < -50) index--;
+
+  if (index < 0) index = images.length - 1;
+  if (index >= images.length) index = 0;
+
+  showSlide();
+});
+</script>
+
+</body>
+</html>

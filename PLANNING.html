@@ -1,0 +1,541 @@
+<style>
+:root {
+  --primary: #0aa6a6;
+  --dark: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* ================= TOP BAR ================= */
+.top-bar {
+  background: #16a34a;
+  color: #fff;
+}
+
+.top-bar-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.top-whatsapp {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-whatsapp img,
+.top-right img {
+  width: 18px;
+  filter: invert(1);
+}
+
+.top-right {
+  display: flex;
+  gap: 0.8rem;
+}
+
+
+/* MAIN NAV BAR */
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* SPACE BETWEEN LOGO & MENU */
+}
+
+/* LOGO LEFT */
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;                 /* SPACE BETWEEN LOGO & TEXT */
+  text-decoration: none;
+}
+
+.logo-link img {
+  height: 70px;
+  width: auto;
+}
+
+.logo-link span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #16a34a;              /* GREEN TEXT */
+  white-space: nowrap;
+}
+
+/* NAV RIGHT */
+.menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 70px;
+  width: auto;
+}
+
+.logo-link span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 140%;
+  left: 0;
+  background: #fff;
+  min-width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: .3s;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.6rem 1rem;
+  font-size: .9rem;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+/* HAMBURGER ICON */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #000;
+  border-radius: 3px;
+}
+
+/* MOBILE MENU */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: .3s ease;
+  }
+
+  .menu a {
+    padding: 12px 20px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: var(--dark);
+  color: #cbd5f5;
+  padding: 3rem 1rem;
+}
+
+.footer-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+footer h4 {
+  color: #fff;
+}
+
+footer a {
+  color: #cbd5f5;
+  text-decoration: none;
+  display: block;
+}
+
+.footer-brand {
+  max-width: 300px;
+}
+
+.footer-logo {
+  margin-top: 1rem;
+  width: 180px;        /* BIG but controlled */
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.copyright {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: .8rem;
+}
+
+.vacation-form-section {
+  background: #f4f6f5;
+  padding: 80px 20px;
+}
+
+.vacation-form-container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+}
+
+.vacation-form-container h2 {
+  text-align: center;
+  color: #16a34a;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.vacation-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full {
+  grid-column: span 2;
+}
+
+label {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+input,
+select,
+textarea {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #16a34a;
+}
+
+.submit-btn {
+  background: #16a34a;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #12803c;
+  transform: translateY(-2px);
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .vacation-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.full {
+    grid-column: span 1;
+  }
+}
+
+</style>
+
+
+<body>
+<!-- HEADER -->
+  <header>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+      <div class="top-bar-inner">
+        <div class="top-left">
+          <a href="https://wa.me/+255717534611" class="top-whatsapp">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+            <span>+255 717 534 611</span>
+          </a>
+        </div>
+        <div class="top-right">
+          <a href="#" title="TripAdvisor"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tripadvisor.svg" alt="TripAdvisor"></a>
+          <a href="#" title="YouTube"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"></a>
+          <a href="https://www.facebook.com/profile.php?id=61586918661064" title="Facebook"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+          <a href="https://www.instagram.com/mzungutours" title="Instagram"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+          <a href="#" title="TikTok"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok"></a>
+        </div>
+      </div>
+    </div>
+
+
+<div class="nav">
+  <!-- LOGO LEFT -->
+  <div class="logo">
+    <a href="index.html" class="logo-link">
+      <img src="PHOTO/LOGO.png" alt="Mzungu Tours Logo">
+      <span>Mzungu Tours</span>
+    </a>
+  </div>
+
+    <nav class="menu">
+      <a href="HOME PAGE.html">Home</a>
+
+        <div class="dropdown">
+          <a href="#">Tours ▾</a>
+          <div class="dropdown-menu">
+            <a href="FULL DAY.html">Full Day Tours</a>
+            <a href="HALF DAY.html">Half Day Tours</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="#">Wildlife ▾</a>
+          <div class="dropdown-menu">
+            <a href="TANZANIA SAFAR.html">Tanzania Safari</a>
+            <a href="ZANZIBAR SAFAR.html">Zanzibar Safari</a>
+          </div>
+        </div>
+
+        <a href="PACKAGES.html">Packages</a>
+        <a href="ABOUT US.html">About Us</a>
+        <a href="TRANSFER.html">Transfers</a>
+
+        <div class="dropdown">
+          <a href="#">Contact ▾</a>
+          <div class="dropdown-menu">
+            <a href="ABOUT US.html">Contact Us</a>
+            <a href="B2B.html">B2B</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+<section class="vacation-form-section">
+  <div class="vacation-form-container">
+
+    <h2>Ready to Explore? Let’s Begin!</h2>
+    <p class="subtitle">Tell us about your trip and we’ll create the perfect vacation plan for you.</p>
+
+    <form action="https://formsubmit.co/hanafyally@gmail.com" method="POST" class="vacation-form">
+
+      <!-- FormSubmit settings -->
+      <input type="hidden" name="_subject" value="New Vacation Plan Request">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <div class="form-group">
+        <label>Your Trip Type</label>
+        <select name="Trip Type" required>
+          <option value="">Select</option>
+          <option>Zanzibar Only</option>
+          <option>Zanzibar + Safari</option>
+          <option>Safari Only</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>How Many Adults?</label>
+        <input type="number" name="Adults" min="1" value="2" required>
+      </div>
+
+      <div class="form-group">
+        <label>Who Are You Travelling With?</label>
+        <select name="Travel Group" required>
+          <option value="">Select</option>
+          <option>Family</option>
+          <option>Couple</option>
+          <option>Friends</option>
+          <option>Solo</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Travel Date</label>
+        <input type="date" name="Travel Date" required>
+      </div>
+
+      <div class="form-group">
+        <label>Country</label>
+        <input type="text" name="Country" placeholder="Your country" required>
+      </div>
+
+      <div class="form-group">
+        <label>How Long?</label>
+        <select name="Duration" required>
+          <option value="">Select</option>
+          <option>1 Night</option>
+          <option>2–3 Nights</option>
+          <option>4–5 Nights</option>
+          <option>6–7 Nights</option>
+          <option>8+ Nights</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Kids (with ages)</label>
+        <input type="text" name="Kids" placeholder="e.g. 3 Kids (5, 8, 12)">
+      </div>
+
+      <div class="form-group">
+        <label>Budget Type</label>
+        <select name="Budget Type" required>
+          <option value="">Select</option>
+          <option>Budget</option>
+          <option>Mid-Range</option>
+          <option>Luxury</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" name="Name" placeholder="Full name" required>
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="Email" placeholder="your@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label>Phone / WhatsApp</label>
+        <input type="tel" name="Phone" placeholder="+34 635 10 98 07" required>
+      </div>
+
+      <div class="form-group full">
+        <label>Additional Details</label>
+        <textarea name="Additional Details" rows="4"
+          placeholder="Let us know your preferences, special requests, or interests"></textarea>
+      </div>
+
+      <div class="form-group full">
+        <button type="submit" class="submit-btn">Submit Proposal</button>
+      </div>
+
+    </form>
+  </div>
+</section>
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>ZanzibarWorld</h4>
+      <p>Your trusted partner for Zanzibar adventures.</p>
+    </div>
+
+    <div>
+      <h4>Explore</h4>
+      <a href="#">Tours</a>
+      <a href="#">Safari</a>
+      <a href="#">Packages</a>
+    </div>
+
+    <div>
+      <h4>Support</h4>
+      <a href="#">Contact</a>
+      <a href="#">FAQ</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+
+  <div class="copyright">
+    © 2026 Mzungutours. All rights reserved.
+  </div>
+</footer>
+</body>

@@ -1,0 +1,1810 @@
+<!-- HEADER -->
+<header>
+   <style>
+    :root {
+      --primary: #0aa6a6;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --gray: #64748b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+/* ================= MAIN NAV ================= */
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+/* MAIN NAV BAR */
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* SPACE BETWEEN LOGO & MENU */
+}
+
+/* LOGO LEFT */
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;                 /* SPACE BETWEEN LOGO & TEXT */
+  text-decoration: none;
+}
+
+.logo-link img {
+  height: 70px;
+  width: auto;
+}
+
+.logo-link span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #008000;              /* GREEN TEXT */
+  white-space: nowrap;
+}
+
+/* NAV RIGHT */
+.menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 70px;
+  width: auto;
+}
+
+/* Logo text color */
+.logo-link span {
+  color: #16a34a;   /* <-- your green color */
+  font-weight: 700;  /* optional, makes it bold */
+  font-size: 1.4rem; /* optional, adjusts size */
+}
+
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 140%;
+  left: 0;
+  background: #fff;
+  min-width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: .3s;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.6rem 1rem;
+  font-size: .9rem;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+
+
+ /* ================= TOP BAR ================= */
+.top-bar {
+  background: #16a34a;
+  color: #fff;
+}
+
+.top-bar-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.top-whatsapp {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-whatsapp img,
+.top-right img {
+  width: 18px;
+  filter: invert(1);
+}
+
+.top-right {
+  display: flex;
+  gap: 0.8rem;
+}
+
+
+/* MAIN NAV BAR */
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* SPACE BETWEEN LOGO & MENU */
+}
+
+/* LOGO LEFT */
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;                 /* SPACE BETWEEN LOGO & TEXT */
+  text-decoration: none;
+}
+
+.logo-link img {
+  height: 70px;
+  width: auto;
+}
+
+.logo-link span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #008000;              /* GREEN TEXT */
+  white-space: nowrap;
+}
+
+/* NAV RIGHT */
+.menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 70px;
+  width: auto;
+}
+
+.logo-link span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+}
+
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.6rem 1rem;
+  font-size: .9rem;
+}
+
+}
+
+/* DROPDOWN BASE */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.15);
+  display: none;
+  z-index: 999;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 16px;
+}
+
+/* DESKTOP HOVER */
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* MOBILE STYLE */
+@media (max-width: 768px) {
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+}
+
+
+
+/* HAMBURGER ICON */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #000;
+  border-radius: 3px;
+}
+
+/* MOBILE MENU */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: .3s ease;
+  }
+
+  .menu a {
+    padding: 12px 20px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+
+:root {
+  --primary: #0aa6a6;
+}
+
+/* NAV CONTAINER */
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* LOGO */
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.logo-link img {
+  height: 60px;
+}
+
+.logo-link span {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #000;
+  border-radius: 3px;
+}
+
+/* MENU DESKTOP */
+.menu {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.menu a,
+.dropdown-toggle {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+/* DROPDOWN DESKTOP */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.15);
+  display: none;
+  z-index: 999;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 16px;
+}
+
+.dropdown {
+  position: relative; /* prevents hover gap */
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+    display: none;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu a,
+  .dropdown-toggle {
+    width: 100%;
+    padding: 14px 20px;
+    text-align: left;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+}
+
+
+    .footer-logo {
+  margin-top: 1rem;
+  width: 180px;        /* BIG FOOTER LOGO */
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+    .hero {
+      min-height: 90vh;
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('PHOTO/NAKUPENDA3.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: auto;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.8rem 1.6rem;
+      border-radius: 30px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+.hero-cta {
+  position: relative;
+  display: inline-block;
+}
+
+.start-btn {
+  background: #0aa6a6;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 2.2rem;
+  font-size: 1rem;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.start-btn:hover {
+  background: #089191;
+  transform: translateY(-2px);
+}
+
+.start-panel {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: #fff;
+  border-radius: 20px;
+  padding: 1rem;
+  width: 260px;
+  display: grid;
+  gap: 0.6rem;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  z-index: 2000;
+}
+
+.start-panel.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.start-panel a {
+  padding: 0.75rem 1rem;
+  border-radius: 14px;
+  background: #f1f5f9;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #0f172a;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.start-panel a:hover {
+  background: #0aa6a6;
+  color: #fff;
+}
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-outline {
+      border: 2px solid white;
+      color: white;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+
+tours section-title
+
+/* SECTION */
+.tour-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tour-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.tour-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.tour-card {
+  background: #fff;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+}
+
+.tour-card:hover {
+  transform: translateY(-6px);
+}
+
+.tour-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* BODY */
+.tour-body {
+  padding: 18px;
+  text-align: center;
+}
+
+.tour-body h3 {
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+}
+
+/* ACTIONS – HORIZONTAL */
+.tour-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* PRICE (NOT CLICKABLE) */
+.tour-price {
+  background: #16a34a;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: default;
+}
+
+/* DETAILS BUTTON (CLICKABLE) */
+.tour-btn {
+  background: #0aa6a6;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.tour-btn:hover {
+  background: #089191;
+  transform: translateY(-1px);
+}
+
+    section {
+      padding: 4rem 1rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title h2 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title p {
+      color: var(--gray);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card-body {
+      padding: 1.2rem;
+    }
+
+    .card-body h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .card-body p {
+      font-size: 0.9rem;
+      color: var(--gray);
+    }
+
+    .cta {
+      background: linear-gradient(135deg, var(--primary), #06b6d4);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+      border-radius: 24px;
+    }
+    footer {
+      background: var(--dark);
+      color: #cbd5f5;
+      padding: 3rem 1rem;
+    }
+
+    .footer-grid {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+
+    footer h4 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-size: 0.9rem;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #94a3b8;
+    }
+
+
+/* Footer css social media */
+
+.footer-follow-text {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 250px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.footer-social img {
+  width: 22px;
+  height: 22px;
+  filter: invert(1);
+  opacity: 0.8;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-social img:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+      }
+
+      .floating-social {
+        bottom: 1rem;
+        right: 50%;
+        transform: translateX(50%);
+        flex-direction: row;
+      }
+    }
+    }
+  
+.simple-gallery {
+  padding: 60px 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Fullscreen lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+
+.lightbox .close,
+.lightbox .prev,
+.lightbox .next {
+  position: absolute;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.lightbox .close {
+  top: 20px;
+  right: 30px;
+}
+
+.lightbox .prev {
+  left: 30px;
+}
+
+.lightbox .next {
+  right: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.lightbox .prev,
+.lightbox .next {
+  position: absolute;
+  top: 50%;
+  font-size: 45px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  user-select: none;
+}
+
+.lightbox .prev { left: 20px; }
+.lightbox .next { right: 20px; }
+
+    .floating-social {
+      position: fixed;
+      top: 80px;
+      right: 1.2rem;
+      background: white;
+      border-radius: 999px;
+      padding: 0.5rem 0.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      opacity: 0;
+      transform: translateY(-10px);
+      pointer-events: none;
+      transition: all 0.4s ease;
+      z-index: 3000;
+    }
+
+    .floating-social.show {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .floating-social a {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f1f5f9;
+      transition: 0.3s;
+    }
+
+    .floating-social a:hover {
+      background: var(--primary);
+    }
+
+    .floating-social img {
+      width: 20px;
+      height: 20px;
+      filter: invert(0.4);
+    }
+
+    .floating-social a:hover img {
+      filter: invert(1);
+    }
+  
+    .top-bar {
+      background: #16a34a;
+      color: white;
+    }
+
+    .top-bar-inner {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0.6rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .top-whatsapp {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 500;
+      color: white;
+    }
+
+    .top-whatsapp img {
+      width: 18px;
+      height: 18px;
+      filter: invert(1);
+    }
+    .half-day-tours {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.round-card {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.round-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.round-card h3 {
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.round-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.more-btn {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #0a6cff;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.popular-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.trip-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.trip-card:hover {
+  transform: translateY(-6px);
+}
+
+.trip-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.trip-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.trip-content h3 {
+  margin-bottom: 10px;
+}
+
+.trip-content p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.btn:hover {
+  background: #084fc1;
+}
+
+
+    .top-right {
+      display: flex;
+      gap: 0.8rem;
+    }
+
+    .top-right img {
+      width: 18px;
+      height: 18px;
+      filter: invert(1);
+      opacity: 0.9;
+      transition: 0.3s;
+    }
+
+    .top-right a:hover img {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+
+    .more-tours-btn {
+  text-align: center;
+  margin-top: 40px;
+}
+</style>
+
+  
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <a href="https://wa.me/+255717534611" class="top-whatsapp">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+        <span>+255 717 534 611</span>
+      </a>
+
+      <div class="top-right">
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tripadvisor.svg" alt="TripAdvisor"></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"></a>
+        <a href="https://www.facebook.com/profile.php?id=61586918661064"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+        <a href="https://www.instagram.com/mzungutours"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN NAV -->
+ <div class="nav">
+   <!-- LOGO LEFT -->
+  <div class="logo">
+    <a href="index.html" class="logo-link">
+      <img src="PHOTO/LOGO.png" alt="Mzungu Tours Logo">
+      <span>Mzungu Tours</span>
+    </a>
+  </div>
+    
+ <!-- HAMBURGER RIGHT -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+  </div>
+
+
+    <nav class="menu" id="menu">
+      <a href="HOME PAGE.html">Home</a>
+
+     <div class="dropdown">
+          <a href="#">Tours ▾</a>
+          <div class="dropdown-menu">
+            <a href="FULL DAY.html">Full Day Tours</a>
+            <a href="HALF DAY.html">Half Day Tours</a>
+          </div>
+        </div>
+
+         <div class="dropdown">
+          <a href="#">Wildlife ▾</a>
+          <div class="dropdown-menu">
+            <a href="TANZANIA SAFAR.html">Tanzania Safari</a>
+            <a href="ZANZIBAR SAFAR.html">Zanzibar Safari</a>
+          </div>
+        </div>
+
+      <a href="PACKAGES.html">Packages</a>
+      <a href="ABOUT US.html">About Us</a>
+      <a href="TRANSFER.html">Transfers</a>
+
+      <div class="dropdown">
+        <a href="#">Contact ▾</a>
+        <div class="dropdown-menu">
+          <a href="contact.html">Contact Us</a>
+          <a href="b2b.html">B2B</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Half Day Tours | Mzungu tour</title>
+  <meta name="description" content="Explore full day tours in Zanzibar with ZanzibarWorld." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #0aa6a6;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --gray: #64748b;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--dark);
+      background: var(--light);
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* HEADER & NAV */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+.card-actions {
+  padding: 0 16px 20px;
+  text-align: center;
+}
+
+.details-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.details-btn:hover {
+  background: #089191;
+  transform: translateY(-2px);
+}
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .menu {
+      display: flex;
+      gap: 1.5rem;
+      font-weight: 500;
+    }
+
+    /* HERO SMALL */
+    .hero-small {
+      height: 50vh;
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('PHOTO/FULL.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 2rem;
+    }
+
+    .hero-small h1 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-small p {
+      font-size: 1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    section { padding: 4rem 1rem; }
+
+    .container { max-width: 1200px; margin: auto; }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title h2 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title p { color: var(--gray); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .round-card {
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .round-card:hover { transform: translateY(-6px); }
+
+    .round-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .round-card h3 {
+      padding: 16px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+
+    .more-tours {
+  background: linear-gradient(135deg, #16a34a, #0aa6a6);
+  color: #fff;
+  text-align: center;
+  padding: 70px 20px;
+  margin-top: 80px;
+  border-radius: 30px 30px 0 0;
+}
+
+.more-tours h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.more-tours p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  opacity: 0.95;
+}
+
+.more-tours-btn {
+  display: inline-block;
+  background: #fff;
+  color: #16a34a;
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.more-tours-btn:hover {
+  background: #f0fdf4;
+  transform: translateY(-3px);
+}
+
+
+
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      color: #cbd5f5;
+      padding: 3rem 1rem;
+    }
+
+    .footer-grid {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+
+    footer h4 { color: #fff; margin-bottom: 1rem; }
+
+    footer a {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-size: 0.9rem;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #94a3b8;
+    }
+  </style>
+
+</head>
+
+<body>
+<section class="hero-small">
+  <div>
+    <h1>Full Day Tours</h1>
+    <p>Immersive Zanzibar experiences designed for a Full day of adventure</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Full Day Tours</h2>
+      <p>Short and memorable Zanzibar experiences</p>
+    </div>
+
+  <div class="tour-grid">
+    <div class="tour-card">
+      <img src="PHOTO/BLUE.jpg" alt="Stone Town">
+      <div class="tour-body">
+        <h3>Safari Blue Trip</h3>
+
+        <div class="tour-actions">
+          <span class="tour-price">$55</span>
+          <a href="FULL BLUE SAFARI.html" class="tour-btn">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour-card">
+      <img src="PHOTO/MNEMBA2.jpg" alt="Safari Blue">
+      <div class="tour-body">
+        <h3>Mnemba Island</h3>
+
+        <div class="tour-actions">
+          <span class="tour-price">$55</span>
+          <a href="FULL MNEMBA.html" class="tour-btn">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour-card">
+      <img src="PHOTO/JOZANI.jpg" alt="Spice Tour">
+      <div class="tour-body">
+        <h3>Jozani,Spice farm & Stone town</h3>
+
+        <div class="tour-actions">
+          <span class="tour-price">$75</span>
+          <a href="FULL JOZANI,SPICE&STONE.html" class="tour-btn">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour-card">
+      <img src="PHOTO/PRISON3.jpg" alt="Sunset Cruise">
+      <div class="tour-body">
+        <h3>Spice farm,Prison island & Stone town</h3>
+
+        <div class="tour-actions">
+          <span class="tour-price">$80</span>
+          <a href="FULL SPICE,PRISON&STONE.html" class="tour-btn">Details</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+  <div class="tour-grid">
+    <div class="tour-card">
+      <img src="PHOTO/NAKUPENDA.jpg" alt="Stone Town">
+      <div class="tour-body">
+        <h3>Prison island & Nakupenda sandbank</h3>
+
+        <div class="tour-actions">
+          <span class="tour-price">$89</span>
+          <a href="PRISON&NAKUPENDA.html" class="tour-btn">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour-card">
+      <img src="PHOTO/FARM.jpg" alt="Safari Blue">
+      <div class="tour-body">
+        <h3>Zanzibar cooking class</h3>
+
+        <div class="tour-actions">
+          <span class="tour-price">$79</span>
+          <a href="FULL COOKING.html" class="tour-btn">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour-card">
+      <img src="PHOTO/MNEMBA2.jpg" alt="Spice Tour">
+      <div class="tour-body">
+        <h3>Prison island & Bawe Snorkeling</h3>
+
+        <div class="tour-actions">
+          <span class="tour-price">$105</span>
+          <a href="FULL BAWE&PRISON.html" class="tour-btn">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour-card">
+      <img src="PHOTO/DOLPHIN.jpg" alt="Sunset Cruise">
+      <div class="tour-body">
+        <h3>Local vilage tour</h3>
+
+        <div class="tour-actions">
+          <span class="tour-price">$79</span>
+          <a href="FULL COOKING.html" class="tour-btn">Details</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+  <div class="tour-grid">
+    <div class="tour-card">
+      <img src="PHOTO/KIZIMKAZI.jpg" alt="Stone Town">
+      <div class="tour-body">
+        <h3>Nungwi Aquarium & Sunset dhow</h3>
+
+        <div class="tour-actions">
+          <span class="tour-price">$55</span>
+          <a href="NUNGWI.html" class="tour-btn">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour-card">
+      <img src="PHOTO/KAYAKING1.jpeg" alt="Safari Blue">
+      <div class="tour-body">
+        <h3>Kayaking Adventures</h3>
+
+        <div class="tour-actions">
+          <span class="tour-price">$55</span>
+          <a href="FULL KAYAK.html" class="tour-btn">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour-card">
+      <img src="PHOTO/RED MONKEY2.jpeg" alt="Spice Tour">
+      <div class="tour-body">
+        <h3>Jozani,Spice farm & Stone town</h3>
+
+        <div class="tour-actions">
+          <span class="tour-price">$75</span>
+          <a href="FULL JOZANI,SPICE&STONE.html" class="tour-btn">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour-card">
+      <img src="PHOTO/PRISON3.jpg" alt="Sunset Cruise">
+      <div class="tour-body">
+        <h3>Spice farm,Prison island & Stone town</h3>
+
+        <div class="tour-actions">
+          <span class="tour-price">$80</span>
+          <a href="FULL SPICE,PRISON&STONE.html" class="tour-btn">Details</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+  <div class="tour-grid">
+    <div class="tour-card">
+      <img src="PHOTO/NAKUPENDA.jpg" alt="Stone Town">
+      <div class="tour-body">
+        <h3>Prison island & Nakupenda sandbank</h3>
+
+        <div class="tour-actions">
+          <span class="tour-price">$89</span>
+          <a href="PRISON&NAKUPENDA.html" class="tour-btn">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour-card">
+      <img src="PHOTO/CLASS7.jpeg" alt="Safari Blue">
+      <div class="tour-body">
+        <h3>Zanzibar cooking class</h3>
+
+        <div class="tour-actions">
+          <span class="tour-price">$79</span>
+          <a href="FULL COOKING.html" class="tour-btn">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour-card">
+      <img src="PHOTO/MNEMBA2.jpg" alt="Spice Tour">
+      <div class="tour-body">
+        <h3>Prison island & Bawe Snorkeling</h3>
+
+        <div class="tour-actions">
+          <span class="tour-price">$105</span>
+          <a href="FULL BAWE&PRISON.html" class="tour-btn">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour-card">
+      <img src="PHOTO/VILLAGE.jpg" alt="Sunset Cruise">
+      <div class="tour-body">
+        <h3>Local vilage tour</h3>
+
+        <div class="tour-actions">
+          <span class="tour-price">$79</span>
+          <a href="FULL COOKING.html" class="tour-btn">Details</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="more-tours">
+  <h2>Want to Explore More Tours?</h2>
+  <p>Discover more exciting Zanzibar tours and unique experiences.</p>
+
+  <a href="PACKAGES.html" class="more-tours-btn">
+    View More Tours
+  </a>
+</section>
+
+
+<footer>
+  <div class="footer-grid">
+
+    <!-- LEFT SIDE -->
+    <div class="footer-brand">
+      <h4>Mzungu tours, Zanzibar</h4>
+      <img src="PHOTO/LOGO.png" alt="ZanzibarWorld Logo" class="footer-logo">
+    </div>
+
+    <!-- RIGHT SIDE COLUMN 1 -->
+    <div>
+      <h4>Explore</h4>
+      <a href="FULL DAY.html">Full day tours</a>
+      <a href="HALF DAY.html">Half day tous</a>
+      <a href="TANZANIA SAFAR.html">Tanzania safari</a>
+      <a href="ZANZIBAR SAFAR.html">Safari from zanzibar</a>
+      <a href="TRANSFER.html">Transfers</a>
+      <a href="PACKAGES.html">Packages</a>
+    </div>
+
+    <!-- RIGHT SIDE COLUMN 2 -->
+    <div>
+      <h4>Support</h4>
+      <a href="ABOOUT US.html">Contact</a>
+      <a href="ABOUT US.html">About us</a>
+      <a href="B2B.html">B2B</a>
+      <a href="ABOUT US.html">Social media</a>
+      <a href="ABOUT US.html">FAQ</a>
+      <a href="ABOUT US.html">Privacy Policy</a>
+    </div>
+
+<!-- FOLLOW US COLUMN -->
+<div>
+  <h4>Follow Us</h4>
+
+  <p class="footer-follow-text">
+    Stay connected with us on social media for the latest tours, safari updates, and Zanzibar travel inspiration.
+  </p>
+
+  <div class="footer-social">
+    <a href="https://www.facebook.com/profile.php?id=61586918661064"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+    <a href="https://www.instagram.com/mzungutours"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+    <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"></a>
+    <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok"></a>
+    <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tripadvisor.svg" alt="TripAdvisor"></a>
+  </div>
+
+</div>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 Mzungu tours zanzibar. All rights reserved.
+  </div>
+</footer>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
+
+// Toggle mobile menu
+hamburger.addEventListener("click", function () {
+  menu.classList.toggle("show");
+});
+
+// Dropdown click for mobile
+document.querySelectorAll(".dropdown > a").forEach(function(drop) {
+  drop.addEventListener("click", function(e) {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      this.parentElement.classList.toggle("open");
+    }
+  });
+});
+</script>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
+
+hamburger.addEventListener("click", function () {
+  menu.classList.toggle("show");
+});
+
+// Mobile dropdown click only
+document.querySelectorAll(".dropdown > a").forEach(function(drop) {
+  drop.addEventListener("click", function(e) {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      this.parentElement.classList.toggle("open");
+    }
+  });
+});
+</script>
+</body>
+</html>
