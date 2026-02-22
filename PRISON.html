@@ -584,6 +584,507 @@ footer a {
   .tour-features { grid-template-columns: 1fr; }
   .menu { display: none; }
 }
+  /*........................HUMBAG*................................/
+    /* ================= TOP BAR ================= */
+.top-bar {
+  background: #16a34a;
+  color: #fff;
+}
+
+.top-bar-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.top-whatsapp {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-whatsapp img,
+.top-right img {
+  width: 18px;
+  filter: invert(1);
+}
+
+.top-right {
+  display: flex;
+  gap: 0.8rem;
+}
+
+
+/* MAIN NAV BAR */
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* SPACE BETWEEN LOGO & MENU */
+}
+
+/* LOGO LEFT */
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;                 /* SPACE BETWEEN LOGO & TEXT */
+  text-decoration: none;
+}
+
+.logo-link img {
+  height: 70px;
+  width: auto;
+}
+
+.logo-link span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #008000;              /* GREEN TEXT */
+  white-space: nowrap;
+}
+
+/* NAV RIGHT */
+.menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 70px;
+  width: auto;
+}
+
+.logo-link span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+}
+
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.6rem 1rem;
+  font-size: .9rem;
+}
+
+}
+
+/* DROPDOWN BASE */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.15);
+  display: none;
+  z-index: 999;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 16px;
+}
+
+/* DESKTOP HOVER */
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* MOBILE STYLE */
+@media (max-width: 768px) {
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+}
+
+
+
+/* HAMBURGER ICON */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #000;
+  border-radius: 3px;
+}
+
+/* MOBILE MENU */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: .3s ease;
+  }
+
+  .menu a {
+    padding: 12px 20px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+
+:root {
+  --primary: #0aa6a6;
+}
+
+/* NAV CONTAINER */
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* LOGO */
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.logo-link img {
+  height: 60px;
+}
+
+.logo-link span {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #000;
+  border-radius: 3px;
+}
+
+/* MENU DESKTOP */
+.menu {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.menu a,
+.dropdown-toggle {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+/* DROPDOWN DESKTOP */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.15);
+  display: none;
+  z-index: 999;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 16px;
+}
+
+.dropdown {
+  position: relative; /* prevents hover gap */
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+    display: none;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu a,
+  .dropdown-toggle {
+    width: 100%;
+    padding: 14px 20px;
+    text-align: left;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+}
+
+ .footer-logo {
+  margin-top: 1rem;
+  width: 180px;        /* BIG but controlled */
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.footer-follow-text {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 250px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.footer-social img {
+  width: 22px;
+  height: 22px;
+  filter: invert(1);
+  opacity: 0.8;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-social img:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: row; /* keep logo & hamburger side by side */
+    justify-content: space-between; /* logo left, hamburger right */
+    align-items: center;
+    gap: 0;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+    display: none;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+}
+
+.Tour.detailsa {
+  text-align: left;
+  padding-left: 20px; /* adds normal bullet spacing */
+}
+
+/* ================= TOUR FEATURES OVERRIDE ================= */
+
+.tour-features {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  gap: 30px !important;
+  margin-top: 40px !important;
+}
+
+/* FEATURE BOX */
+.tour-features .feature-box {
+  background: #ffffff !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08) !important;
+  transition: transform 0.3s ease !important;
+  font-size: 16px !important; /* base text size */
+}
+
+.tour-features .feature-box:hover {
+  transform: translateY(-5px) !important;
+}
+
+/* IMAGE */
+.tour-features .feature-box img {
+  width: 100% !important;
+  height: 220px !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* CONTENT AREA */
+.tour-features .feature-content {
+  padding: 22px !important;
+}
+
+/* TITLE */
+.tour-features .feature-content h3 {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  margin-bottom: 12px !important;
+  color: #0f172a !important;
+  line-height: 1.4 !important;
+}
+
+/* DESCRIPTION TEXT */
+.tour-features .feature-content p {
+  font-size: 16.5px !important;
+  line-height: 1.8 !important;
+  color: #444 !important;
+  margin: 0 !important;
+}
+
+/* ================= MOBILE FIX ================= */
+
+@media (max-width: 768px) {
+
+  .tour-features {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .tour-features .feature-box img {
+    height: 200px !important;
+  }
+
+  .tour-features .feature-content {
+    padding: 18px !important;
+  }
+
+  .tour-features .feature-content h3 {
+    font-size: 20px !important;
+  }
+
+  .tour-features .feature-content p {
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+  }
+
+}
+
+
 </style>
 </head>
 
@@ -620,7 +1121,14 @@ footer a {
     </a>
   </div>
 
-<nav class="menu">
+<!-- HAMBURGER RIGHT -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+  </div>
+
+    <nav class="menu" id="menu">
       <a href="HOME PAGE.html">Home</a>
 
         <div class="dropdown">
@@ -646,8 +1154,8 @@ footer a {
         <div class="dropdown">
           <a href="#">Contact ▾</a>
           <div class="dropdown-menu">
-            <a href="contact.html">Contact Us</a>
-            <a href="b2b.html">B2B</a>
+            <a href="ABOUT US.html">Contact Us</a>
+            <a href="B2B.html">B2B</a>
           </div>
         </div>
       </nav>
@@ -728,21 +1236,24 @@ Prison Island (Changuu Island) is reached by a 25-minute boat ride from stone to
   </div>
 
   <div class="book-now">
-    <a href="https://wa.me/255746823907">Book Now</a>
+    <a href="https://wa.me/+255717534611">Book Now</a>
   </div>
 
 </section>
 
-<a href="https://wa.me/255746823907" class="floating-book">
+<a href="https://wa.me/+255717534611" class="floating-book">
   Book Now
 </a>
 
 <section class="payment-section">
   <div class="payment-inner">
-
-    <h2>Price include</h2>
-    <p>Tour Guide; English, French, German, Italian. Entrances fee, Drinking water, All government fees, Hotel Pick up/ Drop-off; (for extra charge.)
-    NOTE: These prices excluded transport costs because it depends on the location of your Hotel. Please reach us and we will provide you full price based on your Hotel location!</p>
+<h2>Price include</h2>
+<ul class="Tour detailsa">
+<li>English French, German, Italian Speaking Guide</li>
+<li>Entrance cost</li>
+<li>Drinking water</li>
+<li>All government fees</li>
+<li>Drop-off; for extra charge</li>    <strong>NOTE: These prices excluded transport costs because it depends on the location of your Hotel. Please reach us and we will provide you full price based on your Hotel location!</strong>
 
     <div class="payment-methods">
 
@@ -768,33 +1279,63 @@ Prison Island (Changuu Island) is reached by a 25-minute boat ride from stone to
 </section>
 
 
-
-
 <footer>
   <div class="footer-grid">
-    <div>
-      <h4>ZanzibarWorld</h4>
-      <p>Your trusted partner for Zanzibar adventures.</p>
+
+    <!-- LEFT SIDE -->
+    <div class="footer-brand">
+      <h4>Mzungu tours, Zanzibar</h4>
+      <img src="PHOTO/LOGO.png" alt="ZanzibarWorld Logo" class="footer-logo">
     </div>
 
+    <!-- RIGHT SIDE COLUMN 1 -->
     <div>
       <h4>Explore</h4>
-      <a href="#">Tours</a>
-      <a href="#">Safari</a>
-      <a href="#">Packages</a>
+      <a href="FULL DAY.html">Full day tours</a>
+      <a href="HALF DAY.html">Half day tous</a>
+      <a href="TANZANIA SAFAR.html">Tanzania safari</a>
+      <a href="ZANZIBAR SAFAR.html">Safari from zanzibar</a>
+      <a href="TRANSFER.html">Transfers</a>
+      <a href="PACKAGES.html">Packages</a>
     </div>
 
+    <!-- RIGHT SIDE COLUMN 2 -->
     <div>
       <h4>Support</h4>
-      <a href="#">Contact</a>
-      <a href="#">FAQ</a>
-      <a href="#">Privacy Policy</a>
+      <a href="ABOOUT US.html">Contact</a>
+      <a href="ABOUT US.html">About us</a>
+      <a href="B2B.html">B2B</a>
+      <a href="ABOUT US.html">Social media</a>
+      <a href="ABOUT US.html">FAQ</a>
+      <a href="ABOUT US.html">Privacy Policy</a>
     </div>
+
+<!-- FOLLOW US COLUMN -->
+<div>
+  <h4>Follow Us</h4>
+
+  <p class="footer-follow-text">
+    Stay connected with us on social media for the latest tours, safari updates, and Zanzibar travel inspiration.
+  </p>
+
+  <div class="footer-social">
+    <a href="https://www.facebook.com/profile.php?id=61586918661064"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+    <a href="https://www.instagram.com/mzungutours"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+    <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"></a>
+    <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok"></a>
+    <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tripadvisor.svg" alt="TripAdvisor"></a>
+  </div>
+
+</div>
+
   </div>
 
   <div class="copyright">
-    © 2026 ZanzibarWorld. All rights reserved.
+    © 2026 Mzungu tours zanzibar. All rights reserved.
   </div>
+</footer>
+
+
   <script>
 let index = 0;
 const track = document.getElementById("sliderTrack");
@@ -843,8 +1384,46 @@ track.addEventListener("touchend", e => {
 });
 </script>
 
+<script>
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
 
-</footer>
+// Toggle mobile menu
+hamburger.addEventListener("click", function () {
+  menu.classList.toggle("show");
+});
+
+// Dropdown click for mobile
+document.querySelectorAll(".dropdown > a").forEach(function(drop) {
+  drop.addEventListener("click", function(e) {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      this.parentElement.classList.toggle("open");
+    }
+  });
+});
+</script>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
+
+hamburger.addEventListener("click", function () {
+  menu.classList.toggle("show");
+});
+
+// Mobile dropdown click only
+document.querySelectorAll(".dropdown > a").forEach(function(drop) {
+  drop.addEventListener("click", function(e) {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      this.parentElement.classList.toggle("open");
+    }
+  });
+});
+</script>
+
+
 
 </body>
 </html>

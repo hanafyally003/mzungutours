@@ -353,36 +353,184 @@ hambag hii hapa
   }
 }
 
-
-
-
-span zake na id
-
-
-         <!-- HAMBURGER RIGHT -->
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-  </div>
-
-
-    <nav class="menu" id="menu">
-
-
-
-    Footer hii hapa 
-    css ya logo ya footer
-
-
-
-    .footer-logo {
+ .footer-logo {
   margin-top: 1rem;
   width: 180px;        /* BIG but controlled */
   max-width: 100%;
   height: auto;
   display: block;
 }
+
+.footer-follow-text {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 250px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.footer-social img {
+  width: 22px;
+  height: 22px;
+  filter: invert(1);
+  opacity: 0.8;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-social img:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: row; /* keep logo & hamburger side by side */
+    justify-content: space-between; /* logo left, hamburger right */
+    align-items: center;
+    gap: 0;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+    display: none;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+}
+
+.Tour.detailsa {
+  text-align: left;
+  padding-left: 20px; /* adds normal bullet spacing */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= TOUR FEATURES OVERRIDE ================= */
+
+.tour-features {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  gap: 30px !important;
+  margin-top: 40px !important;
+}
+
+/* FEATURE BOX */
+.tour-features .feature-box {
+  background: #ffffff !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08) !important;
+  transition: transform 0.3s ease !important;
+  font-size: 16px !important; /* base text size */
+}
+
+.tour-features .feature-box:hover {
+  transform: translateY(-5px) !important;
+}
+
+/* IMAGE */
+.tour-features .feature-box img {
+  width: 100% !important;
+  height: 220px !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* CONTENT AREA */
+.tour-features .feature-content {
+  padding: 22px !important;
+}
+
+/* TITLE */
+.tour-features .feature-content h3 {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  margin-bottom: 12px !important;
+  color: #0f172a !important;
+  line-height: 1.4 !important;
+}
+
+/* DESCRIPTION TEXT */
+.tour-features .feature-content p {
+  font-size: 16.5px !important;
+  line-height: 1.8 !important;
+  color: #444 !important;
+  margin: 0 !important;
+}
+
+/* ================= MOBILE FIX ================= */
+
+@media (max-width: 768px) {
+
+  .tour-features {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .tour-features .feature-box img {
+    height: 200px !important;
+  }
+
+  .tour-features .feature-content {
+    padding: 18px !important;
+  }
+
+  .tour-features .feature-content h3 {
+    font-size: 20px !important;
+  }
+
+  .tour-features .feature-content p {
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+  }
+
+}
+
+
+
+
+
+
+
+
+span zake na id
+
+
+<!-- HAMBURGER RIGHT -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+  </div>
+
+    <nav class="menu" id="menu">
+
 
 
 footer HTML
@@ -445,40 +593,6 @@ footer HTML
 </footer>
 
 
-CSS ZA SOCIAL MEDIA 
-
-
-.footer-follow-text {
-  margin-top: 8px;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 250px;
-}
-
-.footer-social {
-  display: flex;
-  gap: 12px;
-  margin-top: 12px;
-}
-
-.footer-social img {
-  width: 22px;
-  height: 22px;
-  filter: invert(1);
-  opacity: 0.8;
-  transition: 0.3s ease;
-  cursor: pointer;
-}
-
-.footer-social img:hover {
-  opacity: 1;
-  transform: translateY(-3px);
-}
-
-
-
-
-HAMBAG SCRIPT HII HAPA
 
 <script>
 const hamburger = document.getElementById("hamburger");
@@ -525,31 +639,71 @@ document.querySelectorAll(".dropdown > a").forEach(function(drop) {
 
 
 
-KIBOKO YA MAWENGE
+LIST
+
+<h2>Price include</h2>
+<ul class="Tour detailsa">
+<li>Roundtrip flight from Zanzibar</li>
+<li>All Park fees,</li>
+<li>All activities,</li>
+<li>Bush lunch,</li>
+<li>A professional driver/guide,</li>
+<li>Safari Jeep (open car),</li>
+<li>Pick up/ Drop off,</li>
+<li>All Taxes/VAT</li>
+   <strong> NOTE: These prices excluded transport costs because it depends on the location of your Hotel. Please reach us and we will provide you full price based on your Hotel location!</strong>
 
 
-@media (max-width: 768px) {
-  .nav {
-    flex-direction: row; /* keep logo & hamburger side by side */
-    justify-content: space-between; /* logo left, hamburger right */
-    align-items: center;
-    gap: 0;
-  }
 
-  .menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #fff;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 0;
-    box-shadow: 0 10px 30px rgba(0,0,0,.15);
-    display: none;
-  }
+   
 
-  .menu.show {
-    display: flex;
-  }
-}
+<h2>Price include</h2>
+<ul class="Tour detailsa">
+<li>All Park fees</li>
+<li>All activities</li>
+<li>Bush lunch</li>
+<li>A professional driver/guide</li>
+<li>Safari Jeep (open car)</li>
+<li>Airport Pick up/ Drop off</li>
+<li>Accommodation</li>
+<li>All Taxes/VAT.</li> 
+
+
+
+
+<h2>Price include</h2>
+<ul class="Tour detailsa">
+<li>English Speaking Guide</li>
+<li>Boat&Swimming Equipment</li>
+<li>Entrance cost</li>
+<li>Snorkeling Equipment</li>
+<li>Wooden made local Boat</li>
+<li>Tropical Fruits&Drinking water</li>
+<li>All government fees</li>
+<li>Drop-off; for extra charge</li>    <strong>NOTE: These prices excluded transport costs because it depends on the location of your Hotel. Please reach us and we will provide you full price based on your Hotel location!</strong>
+
+
+
+
+
+
+<h2>Price include</h2>
+<ul class="Tour detailsa">
+<li>Accommodation,</li>
+<li>Return airport to hotel transfers,</li>
+<li>Breakfast & Dinner,</li>
+<li>Transport during excursions,</li>
+<li>Entrances,</li>
+<li>Drinking water while on excursions,</li>
+<li>A professional driver/guide,</li>
+<li>All Taxes and VAT,</li>
+<li>Local SIM Cards.</li>
+<br>                                                                                            
+   <strong> NOTE:Please reach us and we will provide you full price based on your Hotel location!</strong>
+
+
+
+
+whatsapp
+https://wa.me/+255717534611
+
