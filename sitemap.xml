@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-<loc>https://mzungutours.com/</loc>
-<lastmod>2026-03-09</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-</url>
+  <url>
+    <loc>https://mzungutours.com/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-<url>
-<loc>https://mzungutours.com/ABOUT US.html</loc>
-<lastmod>2026-03-09</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.9</priority>
-</url>
+  <url>
+    <loc>https://mzungutours.com/ABOUT%20US.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-<url>
-<loc>https://mzungutours.com/TANZANIA SAFAR.html</loc>
-<lastmod>2026-03-09</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.9</priority>
-</url>
+  <url>
+    <loc>https://mzungutours.com/TANZANIA%20SAFAR.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-<url>
-<loc>https://mzungutours.com/PACKAGES.html</loc>
-<lastmod>2026-03-09</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
+  <url>
+    <loc>https://mzungutours.com/PACKAGES.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-<loc>https://mzungutours.com/TRANSFER.html</loc>
-<lastmod>2026-03-09</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.7</priority>
-</url>
+  <url>
+    <loc>https://mzungutours.com/TRANSFER.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-<url>
-<loc>https://mzungutours.com/HALF DAY.html</loc>
-<lastmod>2026-03-09</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.5</priority>
-</url>
+  <url>
+    <loc>https://mzungutours.com/HALF%20DAY.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
 
 </urlset>
