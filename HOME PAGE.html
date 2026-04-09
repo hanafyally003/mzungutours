@@ -232,18 +232,19 @@
       color: white;
       padding: 0.0rem;
     }
-    .hero {
+.hero {
   position: relative;
-  min-height: 79vh;
+  height: 79vh;
+  max-height: 900px;
   overflow: hidden;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: white;
   isolation: isolate;
 }
-
+    
 .hero {
   position: relative;
   min-height: 79vh;
@@ -307,10 +308,10 @@
 }
 
 .start-panel {
-  position: fixed;
-  top: 50%;
+  position: absolute;
+  top: calc(100% + 10px);
   left: 50%;
-  transform: translate(-50%, -40%);
+  transform: translateX(-50%);
   background: #fff;
   border-radius: 20px;
   padding: 1rem;
@@ -327,7 +328,6 @@
 .start-panel.show {
   opacity: 1;
   visibility: visible;
-  transform: translate(-50%, -50%);
 }
 
 .start-panel a {
