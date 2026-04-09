@@ -308,10 +308,10 @@
 }
 
 .start-panel {
-  position: absolute;
-  top: calc(100% + 10px);
+  position: fixed;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -40%);
   background: #fff;
   border-radius: 20px;
   padding: 1rem;
@@ -328,6 +328,7 @@
 .start-panel.show {
   opacity: 1;
   visibility: visible;
+  transform: translate(-50%, -50%);
 }
 
 .start-panel a {
