@@ -999,6 +999,59 @@ footer a {
   }
 }
 
+/* ================= TOUR FEATURES OVERRIDE ================= */
+
+.tour-features {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  gap: 30px !important;
+  margin-top: 40px !important;
+}
+
+/* FEATURE BOX */
+.tour-features .feature-box {
+  background: #ffffff !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08) !important;
+  transition: transform 0.3s ease !important;
+  font-size: 16px !important; /* base text size */
+}
+
+.tour-features .feature-box:hover {
+  transform: translateY(-5px) !important;
+}
+
+/* IMAGE */
+.tour-features .feature-box img {
+  width: 100% !important;
+  height: 220px !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* CONTENT AREA */
+.tour-features .feature-content {
+  padding: 22px !important;
+}
+
+/* TITLE */
+.tour-features .feature-content h3 {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  margin-bottom: 12px !important;
+  color: #0f172a !important;
+  line-height: 1.4 !important;
+}
+
+/* DESCRIPTION TEXT */
+.tour-features .feature-content p {
+  font-size: 16.5px !important;
+  line-height: 1.8 !important;
+  color: #444 !important;
+  margin: 0 !important;
+}
+
 .Tour.detailsa {
   text-align: left;
   padding-left: 20px; /* adds normal bullet spacing */
