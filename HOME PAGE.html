@@ -3,23 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mzungu tours | explore zanzibar and tanzania safaris with us</title>
-  <link rel="icon" type="image/png" href="PHOTO/FAVICON.png">
-  <meta name="description" content="Explore Zanzibar with a trusted tour operator. Tours, safaris, transfers, and holiday packages." />
 
+  <!-- ✅ SEO: Improved title (keyword-rich, proper casing) -->
+  <title>Mzungu Tours Zanzibar | Best Tour Operator – Safaris, Transfers & Packages</title>
+  <link rel="icon" type="image/png" href="PHOTO/FAVICON.png">
+    <!-- ✅ SEO: Expanded meta description (was too short at 87 chars) -->
+  <meta name="description" content="Mzungu Tours is Zanzibar's top-rated tour operator. Book half-day tours, full-day excursions, Tanzania safaris, airport transfers, and holiday packages. From $30/person." />
+
+  <!-- ✅ SEO: Keywords -->
+  <meta name="keywords" content="Zanzibar tours, Zanzibar tour operator, Tanzania safari, Zanzibar half day tours, Zanzibar full day tours, airport transfer Zanzibar, Mzungu Tours">
+
+  <!-- ✅ SEO: Robots -->
+  <meta name="robots" content="index, follow">
+
+  <!-- ✅ SEO: Canonical URL -->
+  <link rel="canonical" href="https://www.mzungutours.com/">
+
+  <!-- ✅ SEO: Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mzungu Tours Zanzibar | Best Tour Operator – Safaris, Transfers & Packages">
+  <meta property="og:description" content="Zanzibar's top-rated tour operator. Book tours, safaris, airport transfers, and holiday packages. Trusted by thousands of travelers.">
+  <meta property="og:image" content="https://www.mzungutours.com/PHOTO/PRISON2.jpg">
+  <meta property="og:url" content="https://www.mzungutours.com/">
+  <meta property="og:site_name" content="Mzungu Tours Zanzibar">
+  <meta property="og:locale" content="en_US">
+
+  <!-- ✅ SEO: Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mzungu Tours Zanzibar | Best Tour Operator">
+  <meta name="twitter:description" content="Book Zanzibar tours, Tanzania safaris, airport transfers, and holiday packages with Mzungu Tours.">
+  <meta name="twitter:image" content="https://www.mzungutours.com/PHOTO/PRISON2.jpg">
+
+  <!-- ✅ SEO: Structured Data – TravelAgency (upgraded from bare Organization) -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Mzungu tours",
-  "url": "https://mzungutours.com",
-  "logo": "https://mzungutours.com/PHOTO/favicon2.png"
-}
-</script>
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Mzungu Tours",
+    "url": "https://www.mzungutours.com",
+    "logo": "https://www.mzungutours.com/PHOTO/LOGO.png",
+    "image": "https://www.mzungutours.com/PHOTO/PRISON2.jpg",
+    "description": "Zanzibar's top-rated tour operator offering half-day tours, full-day excursions, Tanzania safaris, airport transfers, and holiday packages.",
+    "telephone": "+255717534611",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Zanzibar",
+      "addressCountry": "TZ"
+    },
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61586918661064",
+      "https://www.instagram.com/mzungutours"
+    ]
+  }
+  </script>
+
+  <!-- ✅ SEO: Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
   <style>
     :root {
       --primary: #0aa6a6;
@@ -189,18 +232,19 @@
       color: white;
       padding: 0.0rem;
     }
-    .hero {
+.hero {
   position: relative;
-  min-height: 79vh;
+  height: 79vh;
+  max-height: 900px;
   overflow: hidden;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: white;
   isolation: isolate;
 }
-
+    
 .hero {
   position: relative;
   min-height: 79vh;
@@ -264,27 +308,27 @@
 }
 
 .start-panel {
-  position: relative;
-  top: 120%;
+  position: fixed;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(10px);
+  transform: translate(-50%, -40%);
   background: #fff;
   border-radius: 20px;
   padding: 1rem;
   width: 260px;
   display: grid;
   gap: 0.2rem;
-  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.35);
   opacity: 0;
   visibility: hidden;
   transition: 0.3s ease;
-  z-index: 2000;
+  z-index: 9999;
 }
 
 .start-panel.show {
   opacity: 1;
   visibility: visible;
-  transform: translateX(-50%) translateY(0);
+  transform: translate(-50%, -50%);
 }
 
 .start-panel a {
